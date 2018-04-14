@@ -51,6 +51,9 @@ body{
     top: 0;
     left: 0;
 }
+#photoCredit a{
+    color: white;
+}
 
 #quoteBox{
     width: 100%;
