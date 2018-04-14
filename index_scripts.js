@@ -59,7 +59,7 @@ function tweetQuote() {
  function generateTweet(tweet) {
      const tweetAPI = "https://twitter.com/intent/tweet?";
      let Tweet = {};
-     Tweet.url = encodeURI("https://codepen.io/Lord_of_Fluff/full/rdwdLN/");
+     Tweet.url = encodeURI("http://www.goodquotes.vladimirchavez.com");
 
      let entities = {};
      entities.hashtags = ["inspire", "quote", "forismatic"];
