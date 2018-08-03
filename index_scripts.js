@@ -25,9 +25,9 @@ $(document).ready(function() {
  * Gets quote from forismatic API and writes to html doc.
  */
 function myWrite() {
-     $.getJSON("http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?", function (json) {
-          var quoteText = json["quoteText"].toString();
-          var author = "-";
+     $.getJSON("https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?", function (json) {
+          let quoteText = json["quoteText"].toString();
+          let author = "-";
           if(json["quoteAuthor"].toString() == null)
               author += "Unknown";
           else
@@ -59,7 +59,7 @@ function tweetQuote() {
  function generateTweet(tweet) {
      const tweetAPI = "https://twitter.com/intent/tweet?";
      let Tweet = {};
-     Tweet.url = encodeURI("http://www.goodquotes.vladimirchavez.com");
+     Tweet.url = encodeURI("https://www.goodquotes.vladimirchavez.com");
 
      let entities = {};
      entities.hashtags = ["inspire", "quote", "forismatic"];
