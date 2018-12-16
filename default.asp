@@ -1,11 +1,9 @@
 <%EnableSessionState=False
 host = Request.ServerVariables("HTTP_HOST")
 
-if host = "goodquotes.vladimirchavez.com" or host = "www.goodquotes.vladimirchavez.com" then
-response.redirect("https://goodquotes.vladimirchavez.com")
+if host = "quotes.chavezcreates.com" or host = "www.quotes.chavezcreates.com" then
+response.redirect("https://quotes.chavezcreates.com")
 
-else
-response.redirect("https://goodquotes.vladimirchavez.com/error.htm")
 
 end if
 %>
